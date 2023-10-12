@@ -1,5 +1,3 @@
-import random
-
 class Telajogador():
     def tela_login(self):
         print('      -- Jogador --     ')
@@ -17,11 +15,25 @@ class Telajogador():
         print(' 3 - alterar jogador   ')
         print(' 4 - adicionar jogador ')
 
+
+    def mostra_jogador(self, nome: str, datnascimento: str, id: int):
+        print("NOME DO JOGADOR: ", nome)
+        print("NASCIMENTO DO JOGADOR: ", datnascimento)
+        print("ID DO JOGADOR: ", id)
+        print("\n")
+
+    def procurar_jogador(self):
+        print('Por favor, informe o ID do jogador')
+        idjogador = input('ID:')
+
+        return idjogador
+
     def tela_cadastro(self):
-        print(' bem-vindo! ')
         
         nome = input('nome: ')
         data = input('sua data de nascimento: ')
 
-    def mensagem(self, msg)
+        return {'nome' : nome, 'data' : data}
+
+    def mensagem(self, msg):
         print(msg)

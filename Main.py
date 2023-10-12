@@ -1,6 +1,13 @@
-import random
+from Controle.ctrlj_ogador import ControladorJogador
 
 
-numero_inteiro_aleatorio = random.randint(1, 100)
+controlador = ControladorJogador()
 
-print(numero_inteiro_aleatorio)
+controlador.incluir_jogador()
+controlador.incluir_jogador()
+controlador.incluir_jogador()
+
+
+controlador.listar_jogadores()
+
+controlador.consulta_jogador()

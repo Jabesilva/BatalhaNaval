@@ -12,7 +12,7 @@ class ControladorJogador:
         id = int(self.__telajogador.procurar_jogador())
         for jogador in self.__jogadores:
             if jogador.id == id:
-                self.__telajogador.mensagem(f'o jogador encontrado é: {jogador.nome}')
+                self.__telajogador.mensagem(f'o jogador encontrado é: {jogador.nome},{jogador.datnascimento},{jogador.id}')
     
     def incluir_jogador(self):
         dados_jogador = self.__telajogador.tela_cadastro()
@@ -39,12 +39,12 @@ class ControladorJogador:
 
     def alterar_jogador(self):
         self.listar_jogadores()
-        idjogador = self.__telajogador.procurar_jogador()
+        idjogador = int(self.__telajogador.procurar_jogador())
         for jogador in self.__jogadores:
             if jogador.id == idjogador:
                 novos_dados = self.__telajogador.tela_cadastro()
                 jogador.nome = novos_dados['nome']
                 jogador.datnascimento = novos_dados['data']
                 jogador.id = random.randint(1,1000)
-                self.__telajogador.mensagem('dados alterados!')
-    
+                self.__telajogador.mensagem(f'dados alterados!,seu novo ID é: {jogador.id}')
+                

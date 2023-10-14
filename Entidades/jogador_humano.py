@@ -2,6 +2,7 @@ from Entidades.jogador import Jogador
 
 class JogadorHumano(Jogador):
     def __init__(self, nome:str, datnascimento: str, id):
+        super().__init__()
         if isinstance(nome, str):
             self.__nome = nome
         if isinstance(datnascimento, str):

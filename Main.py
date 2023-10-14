@@ -1,13 +1,19 @@
-from Controle.ctrlj_ogador import ControladorJogador
+from Entidades.oceano import Oceano
+
+matriz = Oceano(3,4)
+matriz.criar_matriz()
+matriz.imprimir_matriz()
 
 
-controlador = ControladorJogador()
-
-controlador.incluir_jogador()
-controlador.incluir_jogador()
-controlador.incluir_jogador()
 
 
-controlador.listar_jogadores()
 
-controlador.consulta_jogador()
+
+
+#manusear atributo inteiro, adicionar e printar o valor atual
+
+# jabes.add_pontuacao = 10
+# +
+# jabes.add_pontuacao = 10
+# =
+# print(jabes.pontuacao)

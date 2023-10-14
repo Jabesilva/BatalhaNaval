@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 class Jogador(ABC):
     @abstractmethod
     def __init__(self):
-        self.__pontuacao = None
+        self.__pontuacao = 0
         self.__jogadas = []
         self.__partidas = []
     
@@ -14,8 +14,8 @@ class Jogador(ABC):
         return self.__pontuacao
     
     @pontuacao.setter
-    def pontuacao(self, pontuacao):
-        self.__pontuacao = pontuacao
+    def add_pontuacao(self, pontuacao: int):
+        self.__pontuacao += pontuacao
 
     #Métodos Jogadas:
 
@@ -23,7 +23,8 @@ class Jogador(ABC):
         self.__jogadas.append(jogada)
     
     def listar_jogadas(self):
-        return self.__jogadas
+        for jogada in self.__jogadas:
+            return jogada
     
     #Métodos partidas:
     
@@ -31,4 +32,5 @@ class Jogador(ABC):
         self.__partidas.append(partida)
     
     def listar_partidas(self):
-        return self.__partidas
+        for partida in self.__partidas:
+            return partida

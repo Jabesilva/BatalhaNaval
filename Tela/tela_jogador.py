@@ -1,24 +1,20 @@
 class Telajogador():
-    def tela_login(self):
-        print('      -- Jogador --     ')
-        print('     1   -   Login      ')
-        print('     2   -  Cadastrar   ')
-        
-        opcao = int(input('escolha a opcao: '))
-
-        return opcao
     
     def tela_opcoes(self):
-        print(' -- Opcoes jogador --  ')
-        print(' 1 - consultar jogador ')
-        print(' 2 - exluir jogador    ')
-        print(' 3 - alterar jogador   ')
-        print(' 4 - adicionar jogador ')
+        print(' -- Opcoes jogador -- ')
+        print(' 1 - incluir jogador  ')
+        print(' 2 - alterar jogador  ')
+        print(' 3 - listar jogadores ')
+        print(' 4 - excluir jogador  ')
+        print(' 5 - consultar jogador')
+        print(' 0 -     retornar     ')
 
+        opcao = int(input("Escolha a opcao: "))
+        return opcao
 
     def mostra_jogador(self, nome: str, datnascimento: str, id: int):
         print("NOME DO JOGADOR: ", nome)
-        print("NASCIMENTO DO JOGADOR: ", datnascimento)
+        print("DATA DENASCIMENTO DO JOGADOR: ", datnascimento)
         print("ID DO JOGADOR: ", id)
         print("\n")
 

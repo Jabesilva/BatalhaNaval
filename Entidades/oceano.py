@@ -66,12 +66,3 @@ class Oceano():
     @codigo.setter
     def codigo(self, codigo: int):
         self.__codigo = codigo
-
-    @property
-    def codigo(self):
-        return self.__codigo
-    
-    @codigo.setter
-    def codigo(self, codigo: int):
-        self.__codigo = codigo
-
